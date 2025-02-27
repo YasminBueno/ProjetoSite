@@ -1,0 +1,83 @@
+
+:root{
+    --cor01: #007a31;
+    --cor02: #055a27;
+    --cor03: #093d1e;
+    --cor04: #0d2215;
+    --cor05: #101211;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+header{
+   background-image: linear-gradient(to right, var(--cor01),  var(--cor04));
+   
+   padding: 30px;
+   padding-left: 0px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+header h1{
+    padding-left: 20px;
+    color: white;
+}
+header nav menu{
+    display: flex;
+    align-items: center;
+}
+span.material-symbols-outlined{
+    color: white;
+    font-size: 40px;
+}
+span.material-symbols-outlined:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+header nav ul{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor01);
+    
+    font-size: 1.3em;
+    padding: 10px;
+    padding-top: 30px;
+    
+    display: none;
+    flex-direction: column;
+    
+    height: 93%;
+    width: 120px;
+   
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    list-style-type: none;
+}
+header nav ul li{
+    padding: 10px;
+}
+header nav ul li:hover{
+    font-weight: bold;
+}
+header nav ul li span{
+    width: 100%;
+    text-align: center;
+}
